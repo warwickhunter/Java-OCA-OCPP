@@ -42,7 +42,7 @@ See our vision at http://www.chargetime.eu/
 
 Signing with Maven on MacOS
 =======
-To make the `mvn deploy` target work I had to create a gpg default secret key 
+To make the `mvn install` target work I had to create a gpg default secret key. 
 ```shell
  gpg --generate-key
 ```
