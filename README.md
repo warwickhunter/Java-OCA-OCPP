@@ -39,3 +39,15 @@ There are many standards out there, we intend to implement and share them. Any h
 The market is in its defining state, the practices and standards we come up with now, may very well stick around for decades to come.
 
 See our vision at http://www.chargetime.eu/
+
+Signing with Maven on MacOS
+=======
+To make the `mvn deploy` target work I had to create a gpg default secret key 
+```shell
+ gpg --generate-key
+```
+Then add these to my shell environment to allow the signing to prompt for the passphrase.
+```shell
+export GPG_TTY=$(tty)
+export MAVEN_GPG_PASSPHRASE=mypassphrase
+```
